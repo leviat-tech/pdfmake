@@ -19,7 +19,7 @@ var isUndefined = require('./helpers').isUndefined;
 var getSvgToPDF = function () {
 	try {
 		// optional dependency to support svg nodes
-		return require('svg-to-pdfkit');
+		return require('@crhio/svg-to-pdfkit');
 	} catch (e) {
 		throw new Error('Please install svg-to-pdfkit to enable svg nodes');
 	}
